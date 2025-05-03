@@ -1,0 +1,48 @@
+---
+import { getCollection, render } from "astro:content";
+import { Link } from "../../components/link.tsx";
+import { Plot } from "../../components/plot.tsx";
+import Layout from "../../layouts/layout.astro";
+
+export async function getStaticPaths() {
+  const benchmarksByCategory = await getCollection("benchmarksByCategory");
+  return benchmarksByCategory.map((benchmarks) => ({
+    params: { category: benchmarks.id },
+    props: { benchmarks },
+  }));
+}
+
+const { benchmarks } = Astro.props;
+---
+
+<Layout>
+  <div class="flex flex-col gap-12">
+    <div class="space-y-4">
+      <Link href="/">Go back</Link>
+
+      <h2 class="text-xl font-bold leading-relaxed">
+        {benchmarks.data.category}
+      </h2>
+
+      <p class="text-sm">
+        Click and drag to zoom; double click to restore zoom; hover a dot to see
+        details
+      </p>
+    </div>
+
+    {
+      benchmarks.data.benchmarks.map((benchmark) => (
+        <div id={benchmark.benchmarkId} style={{ "min-height": "500px" }}>
+          <Plot
+            client:only
+            title={benchmark.title}
+            series={benchmark.series}
+            axes={benchmark.axes}
+            data={[benchmark.timestamps, benchmark.values]}
+            commits={benchmark.commits}
+          />
+        </div>
+      ))
+    }
+  </div>
+</Layout>

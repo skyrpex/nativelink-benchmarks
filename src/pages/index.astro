@@ -1,0 +1,46 @@
+---
+import Layout from "../layouts/layout.astro";
+
+import { Link } from "../components/link.tsx";
+
+import { getCollection } from "astro:content";
+const benchmarksByCategory = await getCollection("benchmarksByCategory");
+---
+
+<Layout>
+  <h1 class="text-3xl font-bold leading-relaxed">Nativelink benchmarks</h1>
+
+  <p class="text-sm py-4">
+    For every commit to <Link
+      href="https://github.com/TraceMachina/nativelink"
+      target="_blank">nativelink</Link
+    >'s main branch, an automated GitHub workflow checks out the nativelink
+    source code and runs multiple benchmarks: build <Link
+      href="https://github.com/tensorflow/tensorflow"
+      target="_blank"
+    >
+      TensorFlow
+    </Link> with remote cache only, and build with remote cache and execution.
+  </p>
+
+  <div class="flex flex-col gap-8">
+    {
+      benchmarksByCategory.map((category) => (
+        <section class="flex flex-col gap-2">
+          <h2 class="text-sm font-semibold">{category.data.category}</h2>
+          <ul class="text-sm list-disc list-inside leading-relaxed">
+            {category.data.benchmarks.map((benchmark) => (
+              <li>
+                <Link
+                  href={`/benchmarks/${category.id}#${benchmark.benchmarkId}`}
+                >
+                  {benchmark.title}
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </section>
+      ))
+    }
+  </div>
+</Layout>

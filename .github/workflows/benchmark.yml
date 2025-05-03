@@ -1,0 +1,64 @@
+name: Benchmark
+
+on:
+  schedule:
+    - cron: '0 0 * * *'  # Runs at 00:00 UTC every day
+  workflow_dispatch: {}
+
+concurrency:
+  group: benchmark
+
+env:
+  BUN_VERSION: "1.2.5"
+
+jobs:
+  benchmark:
+    runs-on: ubuntu-24.04
+    permissions:
+      id-token: write
+      contents: write
+    steps:
+    - name: Checkout
+      uses: >- # v4.2.2
+        actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+
+    - name: Setup Bun
+      uses: >- # v2.0.2
+        oven-sh/setup-bun@735343b667d3e6f658f44d0eca948eb6282f2b76
+      with:
+        bun-version: ${{ env.BUN_VERSION }}
+
+    - name: Checkout nativelink
+      uses: >- # v4.2.2
+        actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+      with:
+          repository: TraceMachina/nativelink
+          path: nativelink
+
+    - name: Checkout TensorFlow
+      uses: >- # v4.2.2
+        actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+      with:
+          repository: tensorflow/tensorflow
+          path: tensorflow
+          ref: d914ae44cebe97e0a022b85015df935a8610174d
+
+    - name: Install Dependencies
+      run: bun install
+
+    - name: Benchmark
+      run: bun scripts/benchmark.ts
+
+    - name: Show Diff
+      run: git diff
+
+    - name: Configure Git
+      run: |
+        git config --global user.name "GitHub Actions"
+        git config --global user.email "actions@github.com"
+
+    - name: Commit and Push Changes
+      run: |
+        git add .
+        git commit -m "Update benchmark results" || exit 0
+        git push origin main

@@ -1,0 +1,48 @@
+# name: Deploy
+
+# on:
+#   push:
+#     branches: [main]
+#   workflow_run:
+#     workflows: ["Benchmark"]
+#     types:
+#       - completed
+
+# concurrency:
+#   group: deploy
+#   cancel-in-progress: true
+
+# env:
+#   BUN_VERSION: "1.2.5"
+#   DENO_PROJECT: ${{ vars.DENO_PROJECT }}
+
+# jobs:
+#   deploy:
+#     runs-on: ubuntu-24.04
+#     permissions:
+#       id-token: write
+#       contents: read
+#     steps:
+#     - name: Checkout
+#       uses: >- # v4.2.2
+#         actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+
+#     - name: Setup Bun
+#       uses: >- # v2.0.2
+#         oven-sh/setup-bun@735343b667d3e6f658f44d0eca948eb6282f2b76
+#       with:
+#         bun-version: ${{ env.BUN_VERSION }}
+
+#     - name: Install Dependencies
+#       run: bun install
+
+#     - name: Build
+#       run: bun run build
+
+#     - name: Deploy
+#       uses: >- # v1.13.1
+#         denoland/deployctl@35381c73621e1731268f80e51b54718d086f1e64
+#       with:
+#         project: ${{ env.DENO_PROJECT }}
+#         entrypoint: jsr:@std/http/file-server
+#         root: "dist"

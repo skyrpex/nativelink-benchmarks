@@ -1,0 +1,5 @@
+/.astro/
+/dist/
+/nativelink/
+/node_modules/
+/tensorflow/
