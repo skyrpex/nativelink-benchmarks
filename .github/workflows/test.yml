@@ -24,14 +24,14 @@ jobs:
         actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
       with:
           repository: tensorflow/tensorflow
-          # path: tensorflow
+          path: tensorflow
           ref: 799f98580aba5c917e33d38eb353582fac0d71cf
 
     - name: Run Bazel tests
       shell: bash
-      # working-directory: tensorflow
+      working-directory: tensorflow
       run: |
-        bazel //tensorflow/tools/pip_package:wheel --repo_env=USE_PYWRAP_RULES=1 --repo_env=WHEEL_NAME=tensorflow_cpu \
+        bazel build //tensorflow/tools/pip_package:wheel --repo_env=USE_PYWRAP_RULES=1 --repo_env=WHEEL_NAME=tensorflow_cpu \
           --remote_cache=${{ vars.NATIVELINK_COM_REMOTE_CACHE_URL }} \
           --remote_header=${{ secrets.NATIVELINK_COM_API_HEADER }} \
           --bes_backend=${{ vars.NATIVELINK_COM_BES_URL }} \
