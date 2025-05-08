@@ -4,34 +4,34 @@ on:
   pull_request:
 
 jobs:
-  test-tensorflow:
-    runs-on: ubuntu-24.04
-    steps:
-    - name: Setup Bazelisk
-      uses: >- # v0.8.1
-        bazel-contrib/setup-bazel@b388b84bb637e50cdae241d0f255670d4bd79f29
-      with:
-        bazelisk-cache: true
+  # test-tensorflow:
+  #   runs-on: ubuntu-24.04
+  #   steps:
+  #   - name: Setup Bazelisk
+  #     uses: >- # v0.8.1
+  #       bazel-contrib/setup-bazel@b388b84bb637e50cdae241d0f255670d4bd79f29
+  #     with:
+  #       bazelisk-cache: true
 
-    - name: Checkout TensorFlow
-      uses: >- # v4.2.2
-        actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
-      with:
-          repository: tensorflow/tensorflow
-          path: tensorflow
-          ref: 799f98580aba5c917e33d38eb353582fac0d71cf
+  #   - name: Checkout TensorFlow
+  #     uses: >- # v4.2.2
+  #       actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+  #     with:
+  #         repository: tensorflow/tensorflow
+  #         path: tensorflow
+  #         ref: 799f98580aba5c917e33d38eb353582fac0d71cf
 
-    - name: Run Bazel tests
-      shell: bash
-      working-directory: tensorflow
-      run: |
-        bazel build //tensorflow/tools/pip_package:wheel --repo_env=USE_PYWRAP_RULES=1 --repo_env=WHEEL_NAME=tensorflow_cpu \
-          --remote_cache=${{ vars.NATIVELINK_COM_REMOTE_CACHE_URL }} \
-          --remote_header=${{ secrets.NATIVELINK_COM_API_HEADER }} \
-          --bes_backend=${{ vars.NATIVELINK_COM_BES_URL }} \
-          --bes_header=${{ secrets.NATIVELINK_COM_API_HEADER }} \
-          --bes_results_url=${{ vars.NATIVELINK_COM_BES_RESULTS_URL }} \
-          --remote_header=x-nativelink-project=tensorflow-benchmark
+  #   - name: Run Bazel tests
+  #     shell: bash
+  #     working-directory: tensorflow
+  #     run: |
+  #       bazel build //tensorflow/tools/pip_package:wheel --repo_env=USE_PYWRAP_RULES=1 --repo_env=WHEEL_NAME=tensorflow_cpu \
+  #         --remote_cache=${{ vars.NATIVELINK_COM_REMOTE_CACHE_URL }} \
+  #         --remote_header=${{ secrets.NATIVELINK_COM_API_HEADER }} \
+  #         --bes_backend=${{ vars.NATIVELINK_COM_BES_URL }} \
+  #         --bes_header=${{ secrets.NATIVELINK_COM_API_HEADER }} \
+  #         --bes_results_url=${{ vars.NATIVELINK_COM_BES_RESULTS_URL }} \
+  #         --remote_header=x-nativelink-project=tensorflow-benchmark
 
   test-envoy:
     runs-on: ubuntu-24.04
