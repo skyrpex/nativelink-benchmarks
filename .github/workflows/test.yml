@@ -1,0 +1,44 @@
+name: Test
+
+on:
+  pull_request:
+
+concurrency:
+  group: test
+
+env:
+  BUN_VERSION: "1.2.5"
+
+jobs:
+  test:
+    runs-on: ubuntu-24.04
+    environment: production
+    permissions:
+      id-token: write
+      contents: write
+    steps:
+    - name: Setup Bazelisk
+      uses: >- # v0.8.1
+        bazel-contrib/setup-bazel@b388b84bb637e50cdae241d0f255670d4bd79f29
+      with:
+        bazelisk-cache: true
+
+    - name: Checkout TensorFlow
+      uses: >- # v4.2.2
+        actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+      with:
+          repository: tensorflow/tensorflow
+          path: tensorflow
+          ref: d914ae44cebe97e0a022b85015df935a8610174d
+
+    - name: Run Bazel tests
+      shell: bash
+      working-directory: tensorflow
+      run: |
+        bazel //tensorflow/tools/pip_package:wheel --repo_env=USE_PYWRAP_RULES=1 --repo_env=WHEEL_NAME=tensorflow_cpu \
+          --remote_cache=${{ vars.NATIVELINK_COM_REMOTE_CACHE_URL }} \
+          --remote_header=${{ secrets.NATIVELINK_COM_API_HEADER }} \
+          --bes_backend=${{ vars.NATIVELINK_COM_BES_URL }} \
+          --bes_header=${{ secrets.NATIVELINK_COM_API_HEADER }} \
+          --bes_results_url=${{ vars.NATIVELINK_COM_BES_RESULTS_URL }} \
+          --remote_header=x-nativelink-project=tensorflow-benchmark
