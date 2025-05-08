@@ -29,7 +29,7 @@ jobs:
 
     - name: Run Bazel tests
       shell: bash
-      working-directory: tensorflow
+      # working-directory: tensorflow
       run: |
         bazel //tensorflow/tools/pip_package:wheel --repo_env=USE_PYWRAP_RULES=1 --repo_env=WHEEL_NAME=tensorflow_cpu \
           --remote_cache=${{ vars.NATIVELINK_COM_REMOTE_CACHE_URL }} \
