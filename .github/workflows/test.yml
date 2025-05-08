@@ -3,14 +3,8 @@ name: Test
 on:
   pull_request:
 
-concurrency:
-  group: test
-
-env:
-  BUN_VERSION: "1.2.5"
-
 jobs:
-  test:
+  test-tensorflow:
     runs-on: ubuntu-24.04
     steps:
     - name: Setup Bazelisk
@@ -38,3 +32,31 @@ jobs:
           --bes_header=${{ secrets.NATIVELINK_COM_API_HEADER }} \
           --bes_results_url=${{ vars.NATIVELINK_COM_BES_RESULTS_URL }} \
           --remote_header=x-nativelink-project=tensorflow-benchmark
+
+  test-envoy:
+    runs-on: ubuntu-24.04
+    steps:
+    - name: Setup Bazelisk
+      uses: >- # v0.8.1
+        bazel-contrib/setup-bazel@b388b84bb637e50cdae241d0f255670d4bd79f29
+      with:
+        bazelisk-cache: true
+
+    - name: Checkout Envoy
+      uses: >- # v4.2.2
+        actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+      with:
+          repository: envoyproxy/envoy
+          path: envoy
+
+    - name: Run Bazel tests
+      shell: bash
+      working-directory: envoy
+      run: |
+        bazel build //source/exe:envoy \
+          --remote_cache=${{ vars.NATIVELINK_COM_REMOTE_CACHE_URL }} \
+          --remote_header=${{ secrets.NATIVELINK_COM_API_HEADER }} \
+          --bes_backend=${{ vars.NATIVELINK_COM_BES_URL }} \
+          --bes_header=${{ secrets.NATIVELINK_COM_API_HEADER }} \
+          --bes_results_url=${{ vars.NATIVELINK_COM_BES_RESULTS_URL }} \
+          --remote_header=x-nativelink-project=envoy-benchmark
