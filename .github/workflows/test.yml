@@ -12,10 +12,6 @@ env:
 jobs:
   test:
     runs-on: ubuntu-24.04
-    environment: production
-    permissions:
-      id-token: write
-      contents: write
     steps:
     - name: Setup Bazelisk
       uses: >- # v0.8.1
@@ -29,7 +25,10 @@ jobs:
       with:
           repository: tensorflow/tensorflow
           path: tensorflow
-          ref: d914ae44cebe97e0a022b85015df935a8610174d
+          ref: 799f98580aba5c917e33d38eb353582fac0d71cf
+
+    - run: bazel help
+      working-directory: tensorflow
 
     - name: Run Bazel tests
       shell: bash
