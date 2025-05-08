@@ -24,11 +24,8 @@ jobs:
         actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
       with:
           repository: tensorflow/tensorflow
-          path: tensorflow
+          # path: tensorflow
           ref: 799f98580aba5c917e33d38eb353582fac0d71cf
-
-    - run: bazel help
-      working-directory: tensorflow
 
     - name: Run Bazel tests
       shell: bash
