@@ -18,3 +18,4 @@
 {"timestamp":1748220861953,"value":110,"commitHash":"45e300c529908a5e59632d0bdda3ba499b2187ec\n","commitMessage":"Make default config for k8s examples more realistic (#1802)\n\nThis is a bit closer to a production setup than the previous config. It\nalso makes the config more useful for testing as we're using more store\ntypes in this configuration.\n"}
 {"timestamp":1748652706854,"value":90,"commitHash":"76e769cd5ec067c443b56f5da417534c62865892\n","commitMessage":"Update nix setup for GHA workflows (#1813)\n\nBump the nix installer action and remove the no longer functional cache\naction.\n"}
 {"timestamp":1749344322077,"value":111,"commitHash":"58513f3bc2ef22f785c9ba3b4e1b66242dc025bf\n","commitMessage":"Use upstream buildstream packaging (#1815)\n\n\n"}
+{"timestamp":1749603243441,"value":90,"commitHash":"82b30ff785d7e148e664c88e60707b6c5f393570\n","commitMessage":"Re-enable doctests for nativelink-proto (#1824)\n\n\n"}
