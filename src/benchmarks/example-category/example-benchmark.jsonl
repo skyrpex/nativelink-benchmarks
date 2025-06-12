@@ -19,3 +19,4 @@
 {"timestamp":1748652706854,"value":90,"commitHash":"76e769cd5ec067c443b56f5da417534c62865892\n","commitMessage":"Update nix setup for GHA workflows (#1813)\n\nBump the nix installer action and remove the no longer functional cache\naction.\n"}
 {"timestamp":1749344322077,"value":111,"commitHash":"58513f3bc2ef22f785c9ba3b4e1b66242dc025bf\n","commitMessage":"Use upstream buildstream packaging (#1815)\n\n\n"}
 {"timestamp":1749603243441,"value":90,"commitHash":"82b30ff785d7e148e664c88e60707b6c5f393570\n","commitMessage":"Re-enable doctests for nativelink-proto (#1824)\n\n\n"}
+{"timestamp":1749689610573,"value":76,"commitHash":"1cd0e5c3f25cbcf8ff0491c69702cf5d1c221867\n","commitMessage":"Generate bazel lints from Cargo.toml (#1820)\n\n\n"}
