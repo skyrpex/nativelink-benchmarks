@@ -20,3 +20,4 @@
 {"timestamp":1749344322077,"value":111,"commitHash":"58513f3bc2ef22f785c9ba3b4e1b66242dc025bf\n","commitMessage":"Use upstream buildstream packaging (#1815)\n\n\n"}
 {"timestamp":1749603243441,"value":90,"commitHash":"82b30ff785d7e148e664c88e60707b6c5f393570\n","commitMessage":"Re-enable doctests for nativelink-proto (#1824)\n\n\n"}
 {"timestamp":1749689610573,"value":76,"commitHash":"1cd0e5c3f25cbcf8ff0491c69702cf5d1c221867\n","commitMessage":"Generate bazel lints from Cargo.toml (#1820)\n\n\n"}
+{"timestamp":1749776045607,"value":33,"commitHash":"6e9b131410d7fa5d05aa1cd52ba22e20089ebd95\n","commitMessage":"Updates smithy to remove proc-macro-error (#1822)\n\n\n"}
