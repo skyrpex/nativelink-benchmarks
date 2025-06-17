@@ -22,3 +22,4 @@
 {"timestamp":1749689610573,"value":76,"commitHash":"1cd0e5c3f25cbcf8ff0491c69702cf5d1c221867\n","commitMessage":"Generate bazel lints from Cargo.toml (#1820)\n\n\n"}
 {"timestamp":1749776045607,"value":33,"commitHash":"6e9b131410d7fa5d05aa1cd52ba22e20089ebd95\n","commitMessage":"Updates smithy to remove proc-macro-error (#1822)\n\n\n"}
 {"timestamp":1749862308175,"value":42,"commitHash":"bace8c014516738d68fe76a9c70bd8b3524e20dc\n","commitMessage":"Add Browserbase wordmark (#1800)\n\n\n"}
+{"timestamp":1750121645894,"value":105,"commitHash":"4616615a4189d8096d7c0bac503b2ba48aa5590a\n","commitMessage":"Add JSON5 formatting to pre-commit (#1817)\n\n\n"}
