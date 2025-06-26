@@ -24,3 +24,4 @@
 {"timestamp":1749862308175,"value":42,"commitHash":"bace8c014516738d68fe76a9c70bd8b3524e20dc\n","commitMessage":"Add Browserbase wordmark (#1800)\n\n\n"}
 {"timestamp":1750121645894,"value":105,"commitHash":"4616615a4189d8096d7c0bac503b2ba48aa5590a\n","commitMessage":"Add JSON5 formatting to pre-commit (#1817)\n\n\n"}
 {"timestamp":1750812900055,"value":59,"commitHash":"5aebecdd136b3c93424153fa44cee6859be5c471\n","commitMessage":"Update Rust crate formatx to v0.2.4 (#1751)\n\nCo-authored-by: renovate[bot] <29139614+renovate[bot]@users.noreply.github.com>\n"}
+{"timestamp":1750899259040,"value":49,"commitHash":"a24fa5b47f28d531736485a5014a0d3127b1cfe2\n","commitMessage":"Reduce renovate noise by limiting to security and major fixes only (#1836)\n\n\n"}
