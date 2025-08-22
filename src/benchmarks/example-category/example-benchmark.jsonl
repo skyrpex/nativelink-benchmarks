@@ -50,3 +50,4 @@
 {"timestamp":1755305540053,"value":88,"commitHash":"b23cf19ce07f3415a82a4860641d7d6248a17bd6\n","commitMessage":"Prepare 0.7.0-rc-2 (#1908)\n\n* Prepare 0.7.0-rc-2\n\n* Prepare 0.7.0-rc-2\n\n* generate changelog\n"}
 {"timestamp":1755392339680,"value":48,"commitHash":"fe996ab61dd26bcd13ff5c933efdbdadda841589\n","commitMessage":"Updating version in README and package manifests (#1911)\n\n* Updating version in README\n\n* Update all the package versions\n\n* fix go.mod\n"}
 {"timestamp":1755737404897,"value":86,"commitHash":"6180146cd68d29feb16ef5863f42d56c63a68e5c\n","commitMessage":"Make the bazelrc warnings back to being actual warnings (#1914)\n\n\n"}
+{"timestamp":1755823890179,"value":87,"commitHash":"3f9e037428ccbdb3d427f89bf6f447a790d44de5\n","commitMessage":"Re-enable integration tests (#1915)\n\n\n"}
