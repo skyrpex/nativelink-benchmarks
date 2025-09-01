@@ -51,3 +51,4 @@
 {"timestamp":1755392339680,"value":48,"commitHash":"fe996ab61dd26bcd13ff5c933efdbdadda841589\n","commitMessage":"Updating version in README and package manifests (#1911)\n\n* Updating version in README\n\n* Update all the package versions\n\n* fix go.mod\n"}
 {"timestamp":1755737404897,"value":86,"commitHash":"6180146cd68d29feb16ef5863f42d56c63a68e5c\n","commitMessage":"Make the bazelrc warnings back to being actual warnings (#1914)\n\n\n"}
 {"timestamp":1755823890179,"value":87,"commitHash":"3f9e037428ccbdb3d427f89bf6f447a790d44de5\n","commitMessage":"Re-enable integration tests (#1915)\n\n\n"}
+{"timestamp":1756688388275,"value":107,"commitHash":"f380d7d112ebc292cfd78a6d99660d3ad650279e\n","commitMessage":"Update Rust crate tracing-subscriber to v0.3.20 [SECURITY] (#1917)\n\nCo-authored-by: renovate[bot] <29139614+renovate[bot]@users.noreply.github.com>\n"}
