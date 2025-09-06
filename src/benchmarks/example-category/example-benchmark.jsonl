@@ -53,3 +53,4 @@
 {"timestamp":1755823890179,"value":87,"commitHash":"3f9e037428ccbdb3d427f89bf6f447a790d44de5\n","commitMessage":"Re-enable integration tests (#1915)\n\n\n"}
 {"timestamp":1756688388275,"value":107,"commitHash":"f380d7d112ebc292cfd78a6d99660d3ad650279e\n","commitMessage":"Update Rust crate tracing-subscriber to v0.3.20 [SECURITY] (#1917)\n\nCo-authored-by: renovate[bot] <29139614+renovate[bot]@users.noreply.github.com>\n"}
 {"timestamp":1757033289751,"value":35,"commitHash":"e973aa116b2bab6bdba915adedd66153172add83\n","commitMessage":"Update the Nativelink pricing in the website (#1921)\n\n\n"}
+{"timestamp":1757119599890,"value":34,"commitHash":"7cedb68e304c2cf0e19c2e3e460a2d66abfc41d2\n","commitMessage":"Update product pricing p2 (#1923)\n\n* Update Product pricing features\n"}
