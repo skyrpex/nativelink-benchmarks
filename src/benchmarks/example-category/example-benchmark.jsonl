@@ -67,3 +67,4 @@
 {"timestamp":1758933976725,"value":89,"commitHash":"24624effaa1930fa2f0d33dd36c53f770be95fdd\n","commitMessage":"Add more logging around active_drop_spawns (#1941)\n\n\n"}
 {"timestamp":1759193385082,"value":72,"commitHash":"f5c2c17dfd87ed499688908ec8b6923ac4236436\n","commitMessage":"update hero with trademark (#1942)\n\n\n"}
 {"timestamp":1759280139619,"value":87,"commitHash":"892893e1048a6d2b639fbacc62c8871319b128f5\n","commitMessage":"Better logging for store_awaited_action update failures (#1940)\n\n\n"}
+{"timestamp":1759452444545,"value":49,"commitHash":"e3b108f26d76a15d61adb055e3a56c64c61bf41d\n","commitMessage":"RHEL8 demo image (#1933)\n\n\n"}
