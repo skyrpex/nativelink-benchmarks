@@ -99,3 +99,4 @@
 {"timestamp":1763513572869,"value":47,"commitHash":"3df6293e09131d44f73bb053eba1c1b282b3d9d7\n","commitMessage":"Redis store tester and permits (#1878)\n\n\n"}
 {"timestamp":1763599906333,"value":77,"commitHash":"f56c2bbe9c756c233c1efaf4f705aedbd3f940ee\n","commitMessage":"Disable digest updates for renovate and Nix magic cache (#2059)\n\n\n"}
 {"timestamp":1763686343842,"value":61,"commitHash":"7b9df29b9a682b49add7f0c3198734509655d59a\n","commitMessage":"Update the default max permits for redis (#2063)\n\n\n"}
+{"timestamp":1763772637120,"value":40,"commitHash":"6a95ae8e258b70423da585e5cc2b78ec8d911072\n","commitMessage":"bugfix: prefix Redis index name and sort key (#2066)\n\n\n"}
