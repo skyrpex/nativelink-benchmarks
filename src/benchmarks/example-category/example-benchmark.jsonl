@@ -116,3 +116,4 @@
 {"timestamp":1768438544654,"value":26,"commitHash":"bed6f9a8acf45da17fbd56d12202413360204218\n","commitMessage":"Test redis improvements with client drop and higher max count per cursor (#2110)\n\n\n"}
 {"timestamp":1768525106489,"value":103,"commitHash":"c3a497d36df49d3a1caadede02c4cc6d5af87492\n","commitMessage":"Fix Redis index creation race (#2111)\n\n\n"}
 {"timestamp":1768611352862,"value":36,"commitHash":"c127bba823ca4e5df56da9eaa65df58787b74e3a\n","commitMessage":"fix(deps): update rust crate lru to 0.16.0 [security] (#2106)\n\nCo-authored-by: renovate[bot] <29139614+renovate[bot]@users.noreply.github.com>\n"}
+{"timestamp":1769216181608,"value":25,"commitHash":"24c637ab86b44864787bf7b789d6bf29b98df87f\n","commitMessage":"Add additional logging around worker property matching (#2118)\n\nWe already had good logging around the dynamic cases, this mostly deals with the \"no worker has this named property at all\" cases\n"}
