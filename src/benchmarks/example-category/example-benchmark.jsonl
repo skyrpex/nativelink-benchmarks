@@ -119,3 +119,4 @@
 {"timestamp":1769216181608,"value":25,"commitHash":"24c637ab86b44864787bf7b789d6bf29b98df87f\n","commitMessage":"Add additional logging around worker property matching (#2118)\n\nWe already had good logging around the dynamic cases, this mostly deals with the \"no worker has this named property at all\" cases\n"}
 {"timestamp":1769475684317,"value":57,"commitHash":"3ed406faa9c116485218f1c5aa6340d5b9e312c4\n","commitMessage":"output_files can be very noisy, drop from debug (#2123)\n\n\n"}
 {"timestamp":1769735216187,"value":40,"commitHash":"67a5f9e287d395560bf306b5de64382bb8bbb4d0\n","commitMessage":"Release NativeLink v0.8.0 (#2128)\n\n\n"}
+{"timestamp":1770081055247,"value":79,"commitHash":"85385e68271d78b2b72a24098202aade157a5553\n","commitMessage":"Be clearer about what property values workers are missing (#2121)\n\n\n"}
