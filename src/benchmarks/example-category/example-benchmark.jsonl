@@ -121,3 +121,4 @@
 {"timestamp":1769735216187,"value":40,"commitHash":"67a5f9e287d395560bf306b5de64382bb8bbb4d0\n","commitMessage":"Release NativeLink v0.8.0 (#2128)\n\n\n"}
 {"timestamp":1770081055247,"value":79,"commitHash":"85385e68271d78b2b72a24098202aade157a5553\n","commitMessage":"Be clearer about what property values workers are missing (#2121)\n\n\n"}
 {"timestamp":1770253674319,"value":116,"commitHash":"56a89557ee14130ca10b44f1688d5e9b6e4691d5\n","commitMessage":"Update jsonwebtoken (#2135)\n\n\n"}
+{"timestamp":1770339991529,"value":71,"commitHash":"ecd2903f8ca5086e10f74290533a9fc75c580a7c\n","commitMessage":"Make update_with_whole_file logging default to trace (#2131)\n\nCo-authored-by: Marcus Eagan <marcuseagan@gmail.com>\n"}
