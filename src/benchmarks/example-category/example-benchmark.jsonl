@@ -127,3 +127,4 @@
 {"timestamp":1771031291529,"value":36,"commitHash":"e6c70977a879d552b98ebc2cb23717ab51658a2a\n","commitMessage":"fix metrics (#2097)\n\n* fix metrics\n* Normalize gRPC capitalization\n\n---------\n\nCo-authored-by: Tom Parker-Shemilt <tom@tracemachina.com>\n"}
 {"timestamp":1771118084482,"value":40,"commitHash":"f996507b152a7a5e79367475e7854680cce3eb2c\n","commitMessage":"Fix integer overflow in compression_store.rs data retrieval logic (#2151)\n\nCo-authored-by: Jannis Fengler <20631393+JannisFengler@users.noreply.github.com>\n"}
 {"timestamp":1771204314546,"value":79,"commitHash":"3a90838081e3e6a14d13ee231075492256753d22\n","commitMessage":"Add Max Concurrent Writes (#2156)\n\n* Add Max Concurrent Writes\n\n* Add Max Concurrent Writes\n"}
+{"timestamp":1771290635644,"value":34,"commitHash":"342e47848dbc86d82834028cdb9e07309ced6015\n","commitMessage":"Release NativeLink v1.0.0-rc2 (#2170)\n\n\n"}
