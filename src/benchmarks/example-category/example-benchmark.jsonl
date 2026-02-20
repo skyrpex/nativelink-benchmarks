@@ -128,3 +128,4 @@
 {"timestamp":1771118084482,"value":40,"commitHash":"f996507b152a7a5e79367475e7854680cce3eb2c\n","commitMessage":"Fix integer overflow in compression_store.rs data retrieval logic (#2151)\n\nCo-authored-by: Jannis Fengler <20631393+JannisFengler@users.noreply.github.com>\n"}
 {"timestamp":1771204314546,"value":79,"commitHash":"3a90838081e3e6a14d13ee231075492256753d22\n","commitMessage":"Add Max Concurrent Writes (#2156)\n\n* Add Max Concurrent Writes\n\n* Add Max Concurrent Writes\n"}
 {"timestamp":1771290635644,"value":34,"commitHash":"342e47848dbc86d82834028cdb9e07309ced6015\n","commitMessage":"Release NativeLink v1.0.0-rc2 (#2170)\n\n\n"}
+{"timestamp":1771549680946,"value":29,"commitHash":"faad8bb038fefc439daca73978138b821084648c\n","commitMessage":"If all workers are fully allocated, shortcut find workers (#2130)\n\n\n"}
