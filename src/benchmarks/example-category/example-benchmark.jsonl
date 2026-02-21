@@ -129,3 +129,4 @@
 {"timestamp":1771204314546,"value":79,"commitHash":"3a90838081e3e6a14d13ee231075492256753d22\n","commitMessage":"Add Max Concurrent Writes (#2156)\n\n* Add Max Concurrent Writes\n\n* Add Max Concurrent Writes\n"}
 {"timestamp":1771290635644,"value":34,"commitHash":"342e47848dbc86d82834028cdb9e07309ced6015\n","commitMessage":"Release NativeLink v1.0.0-rc2 (#2170)\n\n\n"}
 {"timestamp":1771549680946,"value":29,"commitHash":"faad8bb038fefc439daca73978138b821084648c\n","commitMessage":"If all workers are fully allocated, shortcut find workers (#2130)\n\n\n"}
+{"timestamp":1771635967202,"value":88,"commitHash":"f0d12ffce777662eb23f898042393a2fac8f2952\n","commitMessage":"Document RPC timeouts in Redis config (#2168)\n\n\n"}
