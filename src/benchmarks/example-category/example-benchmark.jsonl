@@ -153,3 +153,4 @@
 {"timestamp":1775006784665,"value":84,"commitHash":"b5eaef8a60aa46a2dbb5469c03538603adc2efe9\n","commitMessage":"Update references to v1.0.0 (#2260)\n"}
 {"timestamp":1775092603992,"value":111,"commitHash":"fb0d2fad03fc215fae52886f1fa278958d104d0a\n","commitMessage":"Upgrade actions for Node24 (#2265)\n\nCo-authored-by: Marcus Eagan <marcuseagan@gmail.com>\n"}
 {"timestamp":1775611270409,"value":50,"commitHash":"72e03f49d5e34d4c99501a2b210912fdf87401f4\n","commitMessage":"Add docs for tempfs (#2079)\n"}
+{"timestamp":1775697111863,"value":64,"commitHash":"8228d85ce1ba48de7af2a14640dcadedc09a2125\n","commitMessage":"Remove Flux from deployment examples (#2266)\n"}
