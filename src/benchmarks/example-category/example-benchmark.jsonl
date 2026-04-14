@@ -155,3 +155,4 @@
 {"timestamp":1775611270409,"value":50,"commitHash":"72e03f49d5e34d4c99501a2b210912fdf87401f4\n","commitMessage":"Add docs for tempfs (#2079)\n"}
 {"timestamp":1775697111863,"value":64,"commitHash":"8228d85ce1ba48de7af2a14640dcadedc09a2125\n","commitMessage":"Remove Flux from deployment examples (#2266)\n"}
 {"timestamp":1775784150978,"value":49,"commitHash":"5e94e9b9a35068fc07cfb7b8515ba1aac3e050f7\n","commitMessage":"Fix container-image properties for LRE rust (#2271)\n"}
+{"timestamp":1776129970938,"value":114,"commitHash":"7aa7286a1e775e94265b6eecd97857813ea18c90\n","commitMessage":"Update Rust crate rand to v0.9.3 [SECURITY] (#2273)\n\nCo-authored-by: renovate[bot] <29139614+renovate[bot]@users.noreply.github.com>\n"}
