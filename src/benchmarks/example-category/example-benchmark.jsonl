@@ -160,3 +160,4 @@
 {"timestamp":1776302916209,"value":54,"commitHash":"098cf676220cdc7c0946fce4822b865f5da6f837\n","commitMessage":"Add attic nix cache (#2274)\n"}
 {"timestamp":1777341278224,"value":82,"commitHash":"b7f397129df91c950370318fac7c106685ee1929\n","commitMessage":"Re-enable mongo integration test (#2284)\n"}
 {"timestamp":1777427799974,"value":76,"commitHash":"ff15e88fa210c97049ea61d853437120cae056e3\n","commitMessage":"Add grpc test with an actual gRPC server (#2287)\n"}
+{"timestamp":1777514174262,"value":28,"commitHash":"aba12cd1ec2b06092b6752c01d051005fa853658\n","commitMessage":"Add get_part tests for legacy resource names (#2291)\n"}
