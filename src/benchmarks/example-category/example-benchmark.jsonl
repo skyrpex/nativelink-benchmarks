@@ -169,3 +169,4 @@
 {"timestamp":1778291641504,"value":53,"commitHash":"43ab01dbaa0e158df8c30b901fb0397eb46e7811\n","commitMessage":"Add expiry to completed redis actions (#2315)\n"}
 {"timestamp":1778378011441,"value":64,"commitHash":"847b0d300bf4ac766e5b46a355bd0f0f07c81771\n","commitMessage":"migrate to bazel mod skill (#2318)\n"}
 {"timestamp":1778637867515,"value":81,"commitHash":"80ac19c7a13553c70b9f290d17512db02ff79991\n","commitMessage":"execution_server: pre-validate CAS blobs and return PreconditionFailure (#2322)\n\n* execution_server: pre-validate CAS blobs and return PreconditionFailure\n\n* Add Error Type to handle Not Found Context\n"}
+{"timestamp":1778724415136,"value":112,"commitHash":"77a58dfee062abf8900119da3a92189ffeacb884\n","commitMessage":"Update the SECURITY.md (#2325)\n\n* Update the SECURITY.md\n\n* Discord -> Slack\n"}
