@@ -196,3 +196,4 @@
 {"timestamp":1781231480786,"value":83,"commitHash":"c9a63e7dd6f5d46df64fe0f3032d069bdb032b53\n","commitMessage":"Fix println/debug warnings (#2423)\n"}
 {"timestamp":1781316735107,"value":60,"commitHash":"06f01520103a7e91a057f730fd353970e5d985e0\n","commitMessage":"Release NativeLink v1.5.0 (#2430)\n"}
 {"timestamp":1781577754235,"value":80,"commitHash":"04c2f4976e8aadec587f64bb9fe65cfcb90973ad\n","commitMessage":"Dump coverage in text form during CI (#2432)\n\n* Dump coverage in text form as well\n\n* Use patched cargo-llvm-cov\n"}
+{"timestamp":1781663988471,"value":74,"commitHash":"3d9d74ab1de550c2cb2bc016d1df546128beefcf\n","commitMessage":"Release NativeLink v1.5.1 (#2439)\n"}
