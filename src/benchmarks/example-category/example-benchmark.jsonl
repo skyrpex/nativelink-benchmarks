@@ -215,3 +215,4 @@
 {"timestamp":1783648279151,"value":95,"commitHash":"b8e81711a8a5d3048884ef94667415d4afe52a2a\n","commitMessage":"Fix flakey MongoDB test (#2535)\n"}
 {"timestamp":1783734073386,"value":24,"commitHash":"a8e383ae5e8bd78c8b50fdbad17e7376428a3b3e\n","commitMessage":"curl 8.5.0-2ubuntu10.11 security update (#2544)\n"}
 {"timestamp":1783992158860,"value":95,"commitHash":"fb37e86317de19e757ff4e276f2021f9ae0b79cc\n","commitMessage":"Remove StoreSpec docs (#2545)\n"}
+{"timestamp":1784078369699,"value":40,"commitHash":"e72490cc3e388a944f177ce47bca46ecbb027180\n","commitMessage":"Fix skopeo login issues on image publish (#2549)\n\n* Fix skopeo login issues on image publish\n\n* Upgrade registries.conf to v2\n"}
