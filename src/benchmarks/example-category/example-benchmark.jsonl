@@ -217,3 +217,4 @@
 {"timestamp":1783992158860,"value":95,"commitHash":"fb37e86317de19e757ff4e276f2021f9ae0b79cc\n","commitMessage":"Remove StoreSpec docs (#2545)\n"}
 {"timestamp":1784078369699,"value":40,"commitHash":"e72490cc3e388a944f177ce47bca46ecbb027180\n","commitMessage":"Fix skopeo login issues on image publish (#2549)\n\n* Fix skopeo login issues on image publish\n\n* Upgrade registries.conf to v2\n"}
 {"timestamp":1784165333192,"value":57,"commitHash":"2a061ba865d2509decc762f11fbdbcf2871d04f9\n","commitMessage":"Adds weekly and \"everything\" docs regen (#2551)\n"}
+{"timestamp":1784252576672,"value":40,"commitHash":"65e2ec2004ca28e3d9273959c7a809f9b0dcb0e0\n","commitMessage":"Remove quoting around NetApp (#2556)\n\n* Remove quoting around NetApp\n* Fix clippy permitted list of idents\n"}
