@@ -247,3 +247,4 @@
 {"timestamp":1787272738109,"value":29,"commitHash":"a85114732ac6a20f16fcaa93c0c3ef5c2ef3fca7\n","commitMessage":"Tell workers to kill operations the scheduler no longer has executing on them (#2693)\n\n* Tell workers to kill operations the scheduler no longer has executing on them\n\n* Add kill-revoked operations and lock fixes\n"}
 {"timestamp":1787358968881,"value":49,"commitHash":"a21edb0fc56879124e308bb9a67be679f8eaf885\n","commitMessage":"Release NativeLink v1.6.6 (#2708)\n"}
 {"timestamp":1787618229454,"value":108,"commitHash":"53b528e36c2a2657ba132dd94e6616877f5270d9\n","commitMessage":"Label execution resource samples with the action mnemonic (#2712)\n"}
+{"timestamp":1787704682029,"value":118,"commitHash":"1330267e5a5ef8fedd8d0829f731f124e2f2fada\n","commitMessage":"Upgrade curl to 8.5.0-2ubuntu10.13 (#2717)\n"}
