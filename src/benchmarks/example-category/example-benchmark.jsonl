@@ -284,3 +284,4 @@
 {"timestamp":1792288860345,"value":96,"commitHash":"786c2c2f0da02711e2b632ab0a19524a2a953f9d\n","commitMessage":"worker: add option to mount cached input directories as read-only (#2751)\n"}
 {"timestamp":1792376259173,"value":118,"commitHash":"843115085cd746664d10fecd9838a29394891b54\n","commitMessage":"Reduce matcher contention after lost assignments (#2954)\n"}
 {"timestamp":1792463526102,"value":94,"commitHash":"c3772af27d5e8b5e021996ed5da4348c44be0ec5\n","commitMessage":"docs(llms): regenerate llms.txt, llms-small.txt and llms-full.txt (#2967)\n\nCo-authored-by: llms bot <bot@tracemachina.com>\nCo-authored-by: Marcus Eagan <marcuseagan@gmail.com>\n"}
+{"timestamp":1792549542704,"value":39,"commitHash":"131cda9d74695b9e9e01fe854aebe40cc5131316\n","commitMessage":"docs(llms): regenerate llms.txt, llms-small.txt and llms-full.txt (#2978)\n\nCo-authored-by: llms bot <bot@tracemachina.com>\n"}
