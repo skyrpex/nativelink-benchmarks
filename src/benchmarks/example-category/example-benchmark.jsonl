@@ -298,3 +298,4 @@
 {"timestamp":1793680158346,"value":100,"commitHash":"fff012fc3a8a780b00ad6352b89d595f2ca17956\n","commitMessage":"Change copyright holder to Trace Machina, Inc. (#3100)\n"}
 {"timestamp":1793764145158,"value":68,"commitHash":"9e20269b727699c2e5a5494cc1d1f13c8a04382c\n","commitMessage":"docs(blog): The Bomb in Your Bill of Materials (#3114)\n"}
 {"timestamp":1793851629810,"value":49,"commitHash":"799b7498657be655eb80c32011e9bb82c22d9a1b\n","commitMessage":"docs(llms): regenerate llms.txt, llms-small.txt and llms-full.txt (#3120)\n\nCo-authored-by: llms bot <bot@tracemachina.com>\n"}
+{"timestamp":1793937834819,"value":41,"commitHash":"ecaa5c37c89c0eea18063ed00f31d0b56e9df683\n","commitMessage":"ci: use a dedicated lockfile for Bazel 8 compatibility (#3132)\n"}
