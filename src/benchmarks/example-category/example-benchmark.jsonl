@@ -316,3 +316,4 @@
 {"timestamp":1795408704988,"value":95,"commitHash":"8a38e0aec85354cfe74b1bb40392a078128630a6\n","commitMessage":"Windows: handle console shutdown signals and publish signed release binaries (#3264)\n"}
 {"timestamp":1795505428784,"value":101,"commitHash":"6134346b7adac05fd27e8b4b755e09fe80afa4a3\n","commitMessage":"Scheduler: judge another replica's worker by a lease in the shared store (#3269)\n"}
 {"timestamp":1795586354260,"value":92,"commitHash":"c44dd8ade2d7582713e425cfa6f14beb4d4cea7d\n","commitMessage":"Add extra logging to ci_trusted_builds (#3282)\n"}
+{"timestamp":1795672366802,"value":73,"commitHash":"cc31c00c4604d3d4c3e3a3e513902996c7c85b96\n","commitMessage":"Add support for sha384 and sha512 algorithms in checksum.sri validation (#3289)\n"}
